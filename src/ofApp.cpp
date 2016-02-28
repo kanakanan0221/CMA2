@@ -91,7 +91,15 @@ void ofApp::draw(){
         
     }
     
-        
+    Particle myParticle;
+    float vx = ofRandom(-1,1);
+    float vy = ofRandom(-1,1);
+    myParticle.setIntialCondition(x, y, vx, vy);
+    
+    particles.push_back(myParticle);
+    
+
+    
     
     
 //       ofBackground(0);
@@ -180,12 +188,12 @@ void ofApp::mouseMoved(int x, int y ){
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button){
     
-    Particle myParticle;
-    float vx = ofRandom(-1,1);
-        float vy = ofRandom(-1,1);
-     myParticle.setIntialCondition(x, y, vx, vy);
-     particles.push_back(myParticle);
-
+//    Particle myParticle;
+//    float vx = ofRandom(-1,1);
+//        float vy = ofRandom(-1,1);
+//     myParticle.setIntialCondition(x, y, vx, vy);
+//     particles.push_back(myParticle);
+//
 
 }
 
