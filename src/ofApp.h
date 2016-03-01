@@ -34,10 +34,10 @@ class ofApp : public ofBaseApp{
     vector<ofVec3f> fingerPos;
     vector<ofPoint> handPos;
     
-//    ofImage manbo;
+   ofImage manbo;
     
     vector <Particle> particles;
     ofImage img;
 
-		
+    int mode;
 };
